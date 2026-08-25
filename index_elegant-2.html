@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Suruchi Family Restaurant — 100% Pure Veg dining, AC family hall, garden seating and 24x7 60 kW EV fast charging.">
+<title>Suruchi Family Restaurant | Pure Veg • AC / Non-AC • EV Charging</title>
+<style>
+:root{
+  --green:#0b6b45;
+  --green2:#0f8b58;
+  --mint:#e9f8ef;
+  --gold:#f4b63f;
+  --cream:#fffaf0;
+  --ink:#17231d;
+  --muted:#64746b;
+  --white:#fff;
+  --shadow:0 18px 45px rgba(16,55,37,.12);
+  --radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fffdf8 0,#f8fff9 55%,#fffaf1 100%);line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{background:#123d2b;color:#fff;font-size:14px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:10px 0}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);border-bottom:1px solid #e7eee9}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:20px;color:var(--green)}
+.logo{width:45px;height:45px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),#22a96c);color:white;box-shadow:0 8px 20px rgba(11,107,69,.22)}
+.links{display:flex;gap:22px;font-weight:700;color:#40534a}
+.links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 20px;font-weight:800;cursor:pointer}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 10px 25px rgba(11,107,69,.22)}
+.btn-gold{background:var(--gold);color:#3b2a08}
+.btn-light{background:#fff;color:var(--green);border:1px solid #dbe9e0}
+.hero{padding:74px 0 55px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:42px}
+.badges{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.badge{background:var(--mint);color:var(--green);padding:7px 12px;border-radius:999px;font-weight:800;font-size:13px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:0 0 18px;letter-spacing:-2px}
+.hero h1 span{color:var(--green)}
+.lead{font-size:19px;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.hero-card{position:relative;background:linear-gradient(145deg,#0d6845,#18a66b);border-radius:34px;padding:28px;color:#fff;box-shadow:var(--shadow);min-height:420px;display:flex;align-items:flex-end;overflow:hidden}
+.hero-card:before,.hero-card:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.1)}
+.hero-card:before{width:280px;height:280px;right:-70px;top:-80px}.hero-card:after{width:170px;height:170px;left:-65px;bottom:-65px}
+.food-art{position:absolute;inset:45px 45px auto 45px;height:250px;border-radius:30px;background:radial-gradient(circle at 50% 45%,#fff8d8 0 23%,transparent 24%),radial-gradient(circle at 35% 55%,#f7c65b 0 9%,transparent 10%),radial-gradient(circle at 65% 58%,#d75a34 0 8%,transparent 9%),linear-gradient(135deg,#f4e7bf,#fffdf2);box-shadow:inset 0 0 0 8px rgba(255,255,255,.18);transform:rotate(-2deg)}
+.hero-card-content{position:relative;z-index:2}
+.hero-card h3{font-size:29px;margin:0 0 5px}
+.hero-card p{margin:0;color:#e8fff3}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.stat{background:#fff;border:1px solid #e4eee8;border-radius:18px;padding:18px;box-shadow:0 8px 25px rgba(22,55,39,.06)}
+.stat strong{display:block;font-size:25px;color:var(--green)}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:72px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 38px}
+.kicker{color:var(--green);font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h2{font-size:clamp(31px,4vw,46px);line-height:1.1;margin:8px 0 12px}
+.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e4eee8;border-radius:var(--radius);padding:26px;box-shadow:0 12px 30px rgba(21,63,42,.07)}
+.icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:var(--mint);font-size:25px;margin-bottom:16px}
+.card h3{margin:0 0 7px;font-size:21px}.card p{margin:0;color:var(--muted)}
+.menu-wrap{background:linear-gradient(135deg,#123d2b,#0b6b45);color:#fff}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.menu-item{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:22px}
+.menu-item h3{margin:0 0 6px;color:#fff4c8}.menu-item p{margin:0;color:#d8eee2}
+.menu-note{color:#d8eee2;text-align:center;margin-top:25px}
+.ev{background:linear-gradient(135deg,#eaf8ff,#f4fff8)}
+.evbox{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.ev-panel{background:#fff;border-radius:28px;padding:30px;box-shadow:var(--shadow);border:1px solid #e0eee8}
+.ev-number{font-size:58px;font-weight:950;color:#1382a6;line-height:1}
+.ev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+.info{background:#f7fbf8;border-radius:17px;padding:16px}.info strong{display:block;color:var(--green)}
+.location{background:var(--cream)}
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.hours,.contact{background:#fff;border-radius:24px;padding:28px;border:1px solid #eee5d1}
+.hours-row{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px dashed #ddd5c4}
+.hours-row:last-child{border:0}
+.review{background:linear-gradient(135deg,#f7d46b,#f3ad35);text-align:center}
+.review .container{max-width:850px}
+.review p{font-size:18px}
+.footer{background:#102e22;color:#d8ebe0;padding:45px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+.footer h3{color:#fff}.footer a{color:#fff}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:18px;font-size:13px}
+.floating{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.float-btn{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:23px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.call{background:#0b6b45}.whatsapp{background:#20b965}
+@media(max-width:850px){
+ .links{display:none}.hero{padding-top:48px}.hero-grid,.evbox,.location-grid{grid-template-columns:1fr}
+ .hero-card{min-height:350px}.stats{grid-template-columns:repeat(2,1fr)}
+ .cards,.menu-grid{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ h1{letter-spacing:-1px}.topbar .container{justify-content:center;text-align:center}.stats{grid-template-columns:1fr 1fr}
+ .ev-grid{grid-template-columns:1fr}.hero-card{padding:22px}.food-art{inset:35px 25px auto;height:210px}
+ section{padding:55px 0}
+}
+
+.mockup-section{padding:30px 0 70px;background:linear-gradient(180deg,#f7fff9 0,#fffaf0 100%)}
+.mockup-wrap{position:relative;max-width:1080px;margin:0 auto;border-radius:28px;overflow:hidden;background:#fff;border:1px solid #e7eee9;box-shadow:0 24px 70px rgba(16,55,37,.16)}
+.mockup-wrap img{display:block;width:100%;height:auto}
+.mockup-caption{text-align:center;padding:18px 20px 20px;background:#fff}
+.mockup-caption strong{color:var(--green);font-size:18px}.mockup-caption span{display:block;color:var(--muted);font-size:14px;margin-top:3px}
+@media(max-width:760px){.mockup-section{padding:20px 0 45px}.mockup-wrap{width:100%;border-radius:20px}.mockup-caption{padding:14px}}
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div>📍 Dhule–Solapur National Highway • Near Divshi Bridge • Kasabkheda / Ellora Road</div>
+    <div>🌿 100% Pure Veg &nbsp; • &nbsp; ⚡ 24×7 EV Charging &nbsp; • &nbsp; 📞 +91 9960427777</div>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="container navin">
+    <a class="brand" href="#home"><span class="logo">🌿</span> Suruchi Family Restaurant</a>
+    <div class="links">
+      <a href="#about">Why Suruchi</a><a href="#menu">Menu</a><a href="#ev">EV Charger</a><a href="#visit">Visit</a>
+    </div>
+    <a class="btn btn-green" href="tel:+919960427777">📞 Call / Order</a>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badges"><span class="badge">🌱 100% Pure Vegetarian</span><span class="badge">❄️ AC Family Hall</span><span class="badge">🌳 Open Garden</span></div>
+      <h1>Good food. <span>Beautiful moments.</span> Easy highway stops.</h1>
+      <p class="lead">Welcome to <b>Suruchi Family Restaurant</b> — a colourful, comfortable pure-veg destination for families, travellers and highway guests, with AC / non-AC seating, garden lawn, fresh meals and 24×7 EV fast charging.</p>
+      <div class="actions">
+        <a class="btn btn-green" href="#menu">🍽️ Explore Menu</a>
+        <a class="btn btn-gold" href="https://g.page/r/CbZ2snfphL1GEBE/review" target="_blank" rel="noopener">⭐ Post a Review</a>
+        <a class="btn btn-gold" href="#ev">⚡ 60 kW EV Charger</a>
+        <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Suruchi+Pure+Veg+Family+Garden+Restaurant+Kasabkheda+Maharashtra">📍 Get Directions</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>100%</strong><span>Pure Veg</span></div>
+        <div class="stat"><strong>24×7</strong><span>EV Charging</span></div>
+        <div class="stat"><strong>60 kW</strong><span>DC Fast Charger</span></div>
+        <div class="stat"><strong>AC + Garden</strong><span>Family Seating</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="food-art"></div>
+      <div class="hero-card-content">
+        <h3>Suruchi Special</h3>
+        <p>Pure vegetarian dining • Family-friendly • Highway comfort</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Hospitality Excellence</div><h2>Why families and travellers choose Suruchi</h2><p>Fresh food, comfortable seating and thoughtful highway facilities — designed for a relaxed stop with family.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">🍲</div><h3>100% Pure Vegetarian</h3><p>Fresh North Indian dishes, Maharashtrian delicacies, South Indian tiffin and wholesome thalis prepared with pure ingredients.</p></article>
+      <article class="card"><div class="icon">❄️</div><h3>AC / Non-AC Comfort</h3><p>Choose a cool AC family hall or enjoy relaxed open-air seating in the garden lawn.</p></article>
+      <article class="card"><div class="icon">🚗</div><h3>Highway-Friendly Facilities</h3><p>Spacious free parking, hygienic restrooms, family & kids open lawn/play space and a convenient snack counter.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="mockup-section" aria-label="Website design preview">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Website Preview</div><h2>Our Elegant New Look</h2><p>A colourful premium preview of the Suruchi Family Restaurant website.</p></div>
+    <div class="mockup-wrap">
+      <img src="a_full_page_website_screenshot_restaurant_homepa.png" alt="Suruchi Family Restaurant elegant website mockup" loading="lazy">
+      <div class="mockup-caption"><strong>Suruchi Family Restaurant</strong><span>Pure Veg • AC / Non-AC • Garden Seating • 24×7 EV Charging</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-wrap">
+  <div class="container">
+    <div class="section-head"><div class="kicker" style="color:#ffd66d">Authentic Taste</div><h2>Popular Menu Highlights</h2><p style="color:#d8eee2">Freshly prepared favourites for family meals and quick highway stops.</p></div>
+    <div class="menu-grid">
+      <article class="menu-item"><h3>👑 Suruchi Special Veg Thali</h3><p>Paneer butter masala, seasonal veg sabzi, dal tadka, jeera rice, 4 butter chapatis, sweet dish, salad & roasted papad.</p></article>
+      <article class="menu-item"><h3>🌾 Maharashtrian Deluxe Thali</h3><p>Authentic regional preparations with hot jowar bhakri or chapatis, spicy dal, pickle and accompaniments.</p></article>
+      <article class="menu-item"><h3>🥘 Paneer Butter Masala</h3><p>Soft fresh cottage cheese in a rich buttery cashew and tomato gravy.</p></article>
+      <article class="menu-item"><h3>🌶️ Kaju Curry / Veg Kolhapuri</h3><p>Choose rich royal cashew curry or bold, spicy Kolhapuri-style mixed vegetables.</p></article>
+      <article class="menu-item"><h3>🍚 Dal Tadka & Jeera Rice</h3><p>Aromatic yellow lentils tempered with cumin, garlic, Kashmiri red chilli and pure ghee.</p></article>
+      <article class="menu-item"><h3>☕ Highway Breakfast</h3><p>Masala chai, spicy Misal Pav, Kanda Pohe, crispy Masala Dosa and Idli Sambar.</p></article>
+    </div>
+    <p class="menu-note">🍦 Chilled beverages • Premium ice creams • Chocolates • Packaged highway snacks</p>
+  </div>
+</section>
+
+<section id="ev" class="ev">
+  <div class="container evbox">
+    <div>
+      <div class="kicker">Adani TotalEnergies E-Mobility Partner</div>
+      <h2>Charge your EV while you dine.</h2>
+      <p class="lead">A high-capacity 24×7 DC fast-charging station makes Suruchi a convenient highway stop for EV travellers. Enjoy your meal, tea or snack while your car charges.</p>
+      <div class="actions"><a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&query=Suruchi+Pure+Veg+Family+Garden+Restaurant+Kasabkheda+Maharashtra">⚡ Navigate to Charger</a></div>
+    </div>
+    <div class="ev-panel">
+      <div class="ev-number">60 kW</div>
+      <p><b>Dual-Gun DC Fast Charging</b></p>
+      <div class="ev-grid">
+        <div class="info"><strong>Compatibility</strong>All CCS2 4-wheelers</div>
+        <div class="info"><strong>Service</strong>24×7 / Open 24 Hours</div>
+        <div class="info"><strong>Typical Charge</strong>30–45 mins to 80%</div>
+        <div class="info"><strong>While You Wait</strong>Dining • Restrooms • Snacks</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="location">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Plan Your Stop</div><h2>Location, hours & amenities</h2><p>Conveniently situated along the Dhule–Solapur Highway, near Divshi Bridge and the Ellora road corridor.</p></div>
+    <div class="location-grid">
+      <div class="hours">
+        <h3>⏰ Operating Hours</h3>
+        <div class="hours-row"><span>Dine-In Restaurant</span><b>07:00 AM – 11:30 PM</b></div>
+        <div class="hours-row"><span>Takeout / Parcel</span><b>07:00 AM – 11:30 PM</b></div>
+        <div class="hours-row"><span>EV Fast Charging</span><b>Open 24×7</b></div>
+        <div class="hours-row"><span>Snacks & Convenience</span><b>07:00 AM – 11:30 PM</b></div>
+      </div>
+      <div class="contact">
+        <h3>📍 Address & Contact</h3>
+        <p><b>Suruchi Pure Veg Family Garden Restaurant</b><br>Along Dhule–Solapur Highway, Near Divshi Bridge, Kasabkheda / Ellora Road, Malkapur, Chhatrapati Sambhajinagar District, Maharashtra.</p>
+        <p>📞 <b>Phone / Orders:</b> <a href="tel:+919960427777">+91 9960427777</a></p>
+        <p>💳 Google Pay • PhonePe • Paytm • UPI • Cards • Cash</p>
+        <div class="actions"><a class="btn btn-green" href="tel:+919960427777">Call Now</a><a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Suruchi+Pure+Veg+Family+Garden+Restaurant+Kasabkheda+Maharashtra">Open Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="review">
+  <div class="container">
+    <div class="kicker" style="color:#6b4300">We'd Love Your Feedback</div>
+    <h2>Enjoyed your visit?</h2>
+    <p>Your review helps Suruchi Family Restaurant serve travellers and families even better.</p>
+    <a class="btn" style="background:#fff;color:#7a4b00" href="https://g.page/r/CbZ2snfphL1GEBE/review" target="_blank" rel="noopener">⭐ Post a Google Review</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><h3>🌿 Suruchi Family Restaurant</h3><p>100% Pure Veg • AC / Non-AC • Garden Seating • 24×7 EV Fast Charging.</p></div>
+    <div><h3>Quick Links</h3><p><a href="#menu">Menu</a><br><a href="#ev">EV Charger</a><br><a href="#visit">Location & Hours</a></p></div>
+    <div><h3>Contact</h3><p><a href="tel:+919960427777">+91 9960427777</a><br>Dhule–Solapur Highway<br>Near Divshi Bridge, Kasabkheda / Ellora Road</p></div>
+  </div>
+  <div class="container copyright">© 2026 Suruchi Family Restaurant. All rights reserved.</div>
+</footer>
+
+<div class="floating">
+  <a class="float-btn whatsapp" href="https://wa.me/919960427777" aria-label="WhatsApp">☘</a>
+  <a class="float-btn call" href="tel:+919960427777" aria-label="Call">☎</a>
+</div>
+
+</body>
+</html>
