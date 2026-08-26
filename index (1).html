@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#15803d">
+<meta name="description" content="Suruchi Pure Veg Family Garden Restaurant — 100% pure vegetarian highway dining and 24x7 60 kW EV fast charging near Divshi Bridge, Kasabkheda / Ellora Road, Chhatrapati Sambhajinagar.">
+<title>Suruchi Pure Veg Family Garden Restaurant | Highway Dining & 24x7 EV Charging</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#166534;--green2:#16a34a;--green3:#dcfce7;
+  --gold:#a16207;--gold2:#ca8a04;--cyan:#087f5b;--cyan2:#dff7ec;
+  --dark:#0f172a;--muted:#64748b;--cream:#f4f8f2;--white:#fff;
+  --line:#e2e8f0;--shadow:0 18px 50px rgba(15,23,42,.09);
+  --radius:22px;--max:1180px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--dark);font-family:"Plus Jakarta Sans",sans-serif;line-height:1.65}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 36px));margin:auto}
+.topbar{background:var(--dark);color:#fff;font-size:12px}
+.topbar .inner{min-height:42px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.top-left{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;font-weight:700;white-space:nowrap}
+.pill.veg{background:#14532d;color:#bbf7d0}.pill.ev{background:#075985;color:#bae6fd}
+.top-phone{font-weight:800;color:#fde68a;white-space:nowrap}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,253,247,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(226,232,240,.8)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;min-width:max-content}
+.logo{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff;font:800 25px Outfit;background:linear-gradient(135deg,#166534,#22c55e);box-shadow:0 9px 22px rgba(21,128,61,.25)}
+.brand strong{font:800 18px Outfit}.brand span{display:block;color:var(--muted);font-size:10px;letter-spacing:.09em;text-transform:uppercase}
+.nav-links{display:flex;gap:24px;font-size:13px;font-weight:700;color:#334155}
+.nav-links a:hover{color:var(--green)}
+.nav-actions{display:flex;gap:9px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border-radius:13px;font-weight:800;font-size:13px;border:1px solid transparent;transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}.btn-green{background:var(--green);color:#fff;box-shadow:0 10px 24px rgba(21,128,61,.2)}
+.btn-dark{background:var(--dark);color:#fff}.btn-outline{border-color:#cbd5e1;background:#fbfefb;color:var(--dark)}
+.btn-cyan{background:#087f5b;color:#fff}.btn-gold{background:var(--gold);color:#fff}
+.menu-toggle{display:none;border:0;background:none;font-size:25px}
+.hero{position:relative;overflow:hidden;padding:78px 0 70px;background:
+ radial-gradient(circle at 80% 10%,rgba(34,197,94,.20),transparent 31%),
+ radial-gradient(circle at 10% 70%,rgba(234,179,8,.12),transparent 28%),
+ linear-gradient(180deg,#edf7ef 0%,var(--cream) 75%)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border:1px solid #bbf7d0;background:#f0fdf4;color:#166534;border-radius:999px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+h1,h2,h3{font-family:Outfit;margin:0;line-height:1.08}
+h1{font-size:clamp(44px,6vw,70px);letter-spacing:-.045em;margin:17px 0}
+.hero p{font-size:16px;color:#475569;max-width:680px}
+.ctas{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
+.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:25px;color:#475569;font-size:12px;font-weight:700}
+.trust span{display:flex;gap:7px;align-items:center}.check{color:var(--green);font-weight:900}
+.hero-card{border-radius:30px;padding:28px;background:linear-gradient(145deg,#0f172a,#183b2a);color:#fff;box-shadow:0 30px 70px rgba(15,23,42,.2);position:relative;overflow:hidden}
+.hero-card:after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;right:-80px;top:-70px;background:rgba(34,197,94,.18)}
+.hero-card .big{font:800 58px Outfit;line-height:1;color:#86efac}.hero-card .kw{font-size:12px;color:#cbd5e1;letter-spacing:.1em;text-transform:uppercase}
+.charge-bar{margin-top:25px;padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:17px;background:rgba(255,255,255,.05)}
+.charge-bar strong{display:block;font-size:17px}.charge-bar small{color:#cbd5e1}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.stat{padding:15px;border-radius:15px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}.stat b{display:block;font:700 20px Outfit}.stat small{color:#cbd5e1}
+section{padding:78px 0}.section-head{max-width:720px;margin-bottom:34px}.kicker{color:var(--green);font-weight:900;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.section-head h2{font-size:clamp(34px,4vw,48px);margin:8px 0 12px;letter-spacing:-.035em}.section-head p{color:var(--muted);margin:0}
+.amenities{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.amenity{padding:22px;border:1px solid var(--line);background:#fff;border-radius:19px;box-shadow:0 8px 24px rgba(15,23,42,.04)}.amenity .icon{font-size:27px}.amenity h3{font-size:17px;margin:12px 0 7px}.amenity p{font-size:12px;color:var(--muted);margin:0}
+.menu-section{background:#edf7ef}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.tab{border:1px solid #bbf7d0;background:#fff;padding:10px 15px;border-radius:999px;font-weight:800;font-size:12px;cursor:pointer}.tab.active{background:var(--green);color:#fff;border-color:var(--green)}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.dish{background:#fbfefb;border:1px solid #dbe9df;border-radius:19px;padding:20px;display:flex;justify-content:space-between;gap:20px;transition:.2s}.dish:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.dish h3{font-size:19px}.dish p{margin:7px 0 10px;color:var(--muted);font-size:12px}.veg-dot{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:900;color:var(--green);border:1px solid #bbf7d0;background:#f0fdf4;padding:4px 7px;border-radius:999px}.dish .price{font:800 17px Outfit;color:var(--gold);white-space:nowrap}
+.ev-section{background:linear-gradient(135deg,#e8f5ed,#f4faf6)}.ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.ev-card{border-radius:25px;padding:29px;background:#fff;border:1px solid #bae6fd;box-shadow:var(--shadow)}.ev-card.dark{background:linear-gradient(145deg,#082f49,#0f172a);color:#fff;border-color:transparent}.ev-card h3{font-size:28px;margin:8px 0 12px}.specs{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:22px}.spec{padding:14px;border-radius:14px;background:#f4f8f2}.dark .spec{background:rgba(255,255,255,.07)}.spec b{display:block;font:700 19px Outfit}.spec span{font-size:11px;color:var(--muted)}.dark .spec span{color:#cbd5e1}.steps{display:grid;gap:11px;margin-top:20px}.step{display:flex;gap:12px;align-items:flex-start}.num{min-width:29px;height:29px;border-radius:50%;display:grid;place-items:center;background:var(--cyan);color:#fff;font-weight:900;font-size:12px}.step p{margin:0;font-size:13px;color:#475569}.dark .step p{color:#cbd5e1}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.info-card{padding:24px;background:#fbfefb;border:1px solid #dbe9df;border-radius:20px}.info-card h3{font-size:20px;margin-bottom:13px}.info-card p{font-size:13px;color:var(--muted);margin:6px 0}.hours-row{display:flex;justify-content:space-between;border-bottom:1px dashed #e2e8f0;padding:8px 0;font-size:12px}.hours-row:last-child{border:0}.payments{display:flex;flex-wrap:wrap;gap:7px}.pay{padding:7px 10px;border-radius:999px;background:#f1f5f9;font-size:11px;font-weight:800}
+.location{background:#0f172a;color:#fff}.location .section-head p{color:#cbd5e1}.location-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.map-card{min-height:320px;border-radius:25px;overflow:hidden;background:linear-gradient(145deg,#14532d,#0f172a);display:grid;place-items:center;text-align:center;padding:30px;border:1px solid rgba(255,255,255,.08)}.map-pin{font-size:48px}.map-card h3{font-size:28px}.map-card p{color:#cbd5e1;max-width:480px}.contact-card{background:#fbfefb;color:var(--dark);border-radius:25px;padding:28px}.contact-line{padding:14px 0;border-bottom:1px solid var(--line)}.contact-line:last-child{border:0}.contact-line small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;font-weight:900;letter-spacing:.08em}.contact-line strong{font-size:15px}
+footer{background:#07111f;color:#cbd5e1;padding:38px 0}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.footer-brand{color:#fff;font:800 23px Outfit}.footer p{font-size:12px;max-width:470px}.footer a{font-size:12px;color:#cbd5e1}.footer h4{font:700 15px Outfit;color:#fff;margin:0 0 10px}.copyright{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mobile-bar{display:none}
+@media(max-width:1000px){.nav-links{display:none}.menu-toggle{display:block}.nav-actions .btn-outline{display:none}.hero-grid,.location-grid{grid-template-columns:1fr}.hero-card{max-width:620px}.amenities{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.container{width:min(var(--max),calc(100% - 24px))}.topbar .inner{padding:7px 0;align-items:flex-start}.top-left{gap:6px}.top-phone{display:none}.hero{padding:52px 0}.hero p{font-size:14px}.ctas .btn{width:100%}.stats{grid-template-columns:1fr}.amenities,.info-grid,.menu-grid,.ev-grid,.footer-grid{grid-template-columns:1fr}.amenity{padding:18px}.section-head{margin-bottom:24px}.specs{grid-template-columns:1fr}.nav-inner{height:66px}.brand strong{font-size:16px}.brand span{display:none}.hero-card .big{font-size:48px}section{padding:58px 0}.mobile-bar{display:flex;position:fixed;z-index:30;bottom:0;left:0;right:0;padding:8px;background:rgba(15,23,42,.95);backdrop-filter:blur(10px);gap:7px}.mobile-bar a{flex:1}.mobile-bar .btn{width:100%;padding:11px 8px;font-size:11px}.copyright{padding-bottom:55px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container inner">
+    <div class="top-left">
+      <span>📍 Dhule–Solapur Highway, Near Divshi Bridge, Kasabkheda / Ellora Road</span>
+      <span class="pill veg">✓ 100% Pure Veg</span>
+      <span class="pill ev">⚡ 24x7 60 kW EV Fast Charger</span>
+    </div>
+    <a class="top-phone" href="tel:+919960427777">+91 9960427777</a>
+  </div>
+</div>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="Suruchi Family Restaurant home">
+      <div class="logo">S</div>
+      <div><strong>Suruchi Family Restaurant</strong><span>Pure Veg • Garden Dining • EV Hub</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="#why">Why Suruchi</a><a href="#menu">Menu</a><a href="#ev">EV Charging Hub</a><a href="#location">Location & Hours</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="tel:+919960427777">Call</a>
+      <a class="btn btn-green" href="https://wa.me/919960427777?text=Hello%20Suruchi%2C%20I%20would%20like%20to%20order%20takeout.">Order Takeout</a>
+      <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">🌿 Highway dining made better</span>
+      <h1>Delicious Pure Veg Dining on Your Highway Journey</h1>
+      <p>Your premier highway stop along the Dhule–Solapur corridor featuring authentic Maharashtrian specialties, Punjabi thalis, South Indian breakfast, and 24x7 60 kW DC EV fast charging.</p>
+      <div class="ctas">
+        <a class="btn btn-green" href="#menu">Explore Menu →</a>
+        <a class="btn btn-cyan" href="#ev">⚡ 24x7 EV Fast Charger</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Suruchi%20Pure%20Veg%20Family%20Garden%20Restaurant%20Divshi%20Bridge%20Kasabkheda%20Ellora%20Road">Get Directions ↗</a>
+      </div>
+      <div class="trust"><span><b class="check">✓</b> 100% Vegetarian</span><span><b class="check">✓</b> Family Friendly</span><span><b class="check">✓</b> Highway Stop</span><span><b class="check">✓</b> EV Ready</span></div>
+    </div>
+    <div class="hero-card">
+      <span class="kw">24x7 EV Fast Charging Hub</span>
+      <div class="big">60 kW</div>
+      <p style="color:#cbd5e1;margin:7px 0 0">Dual-gun DC fast charging for compatible EVs.</p>
+      <div class="charge-bar"><strong>Charge While You Dine</strong><small>Park • Plug in • Activate • Enjoy your meal</small></div>
+      <div class="stats"><div class="stat"><b>24/7</b><small>Open charging</small></div><div class="stat"><b>CCS2</b><small>Universal</small></div><div class="stat"><b>30–45</b><small>Min. rapid charge*</small></div></div>
+      <small style="display:block;color:#94a3b8;margin-top:15px">*Charging time varies by vehicle, battery state and conditions.</small>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Why Suruchi</div><h2>Everything a highway family needs in one stop.</h2><p>Good food, comfortable seating, practical traveler facilities and fast EV charging—designed for a smooth journey break.</p></div>
+    <div class="amenities">
+      <article class="amenity"><div class="icon">🍲</div><h3>100% Pure Vegetarian</h3><p>Maharashtrian, North Indian and South Indian tiffin favorites.</p></article>
+      <article class="amenity"><div class="icon">❄️</div><h3>Dual Dining Ambience</h3><p>Air-conditioned family hall plus open lawn garden seating.</p></article>
+      <article class="amenity"><div class="icon">⚡</div><h3>24x7 EV Fast Charging</h3><p>60 kW DC fast charging hub in partnership with Adani TotalEnergies E-Mobility.</p></article>
+      <article class="amenity"><div class="icon">🍦</div><h3>Snacks & Convenience</h3><p>Cold drinks, Milky Mist & Hangyo ice creams and travel snacks.</p></article>
+      <article class="amenity"><div class="icon">🚗</div><h3>Traveler Facilities</h3><p>Spacious free parking, clean restrooms and children's play lawn.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-section">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Our Menu</div><h2>Highway favorites, served fresh.</h2><p>Explore popular pure-veg choices for a quick break or a relaxed family meal.</p></div>
+    <div class="tabs">
+      <button class="tab active" data-cat="thali">Special Thalis</button>
+      <button class="tab" data-cat="main">Main Course</button>
+      <button class="tab" data-cat="breakfast">Breakfast & Snacks</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+    <div style="margin-top:20px"><a class="btn btn-green" href="https://wa.me/919960427777?text=Hello%20Suruchi%2C%20I%20would%20like%20to%20order%20from%20the%20menu.">Order on WhatsApp ↗</a></div>
+  </div>
+</section>
+
+<section id="ev" class="ev-section">
+  <div class="container">
+    <div class="section-head"><div class="kicker" style="color:var(--cyan)">EV Charging Hub</div><h2>Charge your car. Enjoy your meal.</h2><p>A convenient 24x7 charging stop for highway EV travelers.</p></div>
+    <div class="ev-grid">
+      <article class="ev-card dark">
+        <div style="font-size:28px">⚡</div><h3>60 kW Dual-Gun DC Charger</h3><p style="color:#cbd5e1">Fast, practical charging while you take a comfortable food break.</p>
+        <div class="specs">
+          <div class="spec"><b>60 kW</b><span>DC fast charging</span></div>
+          <div class="spec"><b>Dual Gun</b><span>Charger configuration</span></div>
+          <div class="spec"><b>CCS2</b><span>Universal compatibility</span></div>
+          <div class="spec"><b>30–45 min</b><span>Typical rapid-charge window*</span></div>
+        </div>
+      </article>
+      <article class="ev-card">
+        <div style="font-size:28px">🍽️</div><h3>Charge While You Dine</h3>
+        <div class="steps">
+          <div class="step"><div class="num">1</div><p><b>Park & plug in.</b><br>Connect your compatible EV to the DC charger.</p></div>
+          <div class="step"><div class="num">2</div><p><b>Activate charging.</b><br>Use the Adani Gas app QR activation flow available at the charging point.</p></div>
+          <div class="step"><div class="num">3</div><p><b>Head inside.</b><br>Enjoy a pure-veg meal, snacks or a refreshing drink.</p></div>
+          <div class="step"><div class="num">4</div><p><b>Continue your journey.</b><br>Check your vehicle status and depart when ready.</p></div>
+        </div>
+        <a class="btn btn-cyan" style="margin-top:22px" href="tel:+919960427777">EV Assistance: +91 9960427777</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head"><div class="kicker">Plan Your Stop</div><h2>Open when you need us.</h2></div>
+    <div class="info-grid">
+      <article class="info-card"><h3>🕐 Hours</h3><div class="hours-row"><b>Dine-in</b><span>07:00 AM – 11:30 PM</span></div><div class="hours-row"><b>Takeout</b><span>07:00 AM – 11:30 PM</span></div><div class="hours-row"><b>EV Charger</b><span>Open 24/7</span></div></article>
+      <article class="info-card"><h3>💳 Payments</h3><p>Easy payment options for your meal and travel stop.</p><div class="payments"><span class="pay">Google Pay</span><span class="pay">PhonePe</span><span class="pay">Paytm</span><span class="pay">UPI</span><span class="pay">Cards</span><span class="pay">Cash</span></div></article>
+      <article class="info-card"><h3>📞 Contact</h3><p><b>Phone:</b> +91 9960427777</p><p><b>Website:</b> suruchivegresto.in</p><a class="btn btn-green" style="margin-top:10px" href="tel:+919960427777">Call Suruchi</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="location">
+  <div class="container">
+    <div class="section-head"><div class="kicker" style="color:#86efac">Location & Directions</div><h2>Easy to find. Easy to stop.</h2><p>Located near Divshi Bridge on the Dhule–Solapur National Highway, around Kasabkheda / Ellora (Verul) Road, Chhatrapati Sambhajinagar District, Maharashtra.</p></div>
+    <div class="location-grid">
+      <div class="map-card">
+        <div><div class="map-pin">📍</div><h3>Suruchi Pure Veg Family Garden Restaurant</h3><p>Dhule–Solapur Highway • Near Divshi Bridge • Kasabkheda / Ellora Road</p><a class="btn btn-green" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Suruchi%20Pure%20Veg%20Family%20Garden%20Restaurant%20Divshi%20Bridge%20Kasabkheda%20Ellora%20Road">Open Google Maps ↗</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-line"><small>Highway</small><strong>Dhule–Solapur National Highway</strong></div>
+        <div class="contact-line"><small>Landmark</small><strong>Near Divshi Bridge</strong></div>
+        <div class="contact-line"><small>Road</small><strong>Kasabkheda / Ellora (Verul) Road</strong></div>
+        <div class="contact-line"><small>District</small><strong>Chhatrapati Sambhajinagar, Maharashtra</strong></div>
+        <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:17px"><a class="btn btn-dark" href="tel:+919960427777">Call Now</a><a class="btn btn-gold" href="https://wa.me/919960427777?text=Hello%20Suruchi%2C%20I%20am%20on%20the%20highway%20and%20need%20directions.">WhatsApp</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">Suruchi Pure Veg Family Garden Restaurant</div><p>100% pure vegetarian highway dining with family garden seating, traveler facilities, snacks and a 24x7 60 kW EV fast-charging hub.</p></div>
+      <div><h4>Quick Links</h4><p><a href="#why">Why Suruchi</a></p><p><a href="#menu">Menu</a></p><p><a href="#ev">EV Charging Hub</a></p><p><a href="#location">Location & Hours</a></p></div>
+      <div><h4>Contact</h4><p><a href="tel:+919960427777">+91 9960427777</a></p><p><a href="https://wa.me/919960427777">WhatsApp</a></p><p>suruchivegresto.in</p></div>
+    </div>
+    <div class="copyright"><span>© 2026 suruchivegresto.in. All rights reserved.</span><span>Proprietor: Mohammed Rais Abdul Samad</span></div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-green" href="tel:+919960427777">☎ Call</a>
+  <a class="btn btn-cyan" href="#ev">⚡ EV</a>
+  <a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Suruchi%20Pure%20Veg%20Family%20Garden%20Restaurant%20Divshi%20Bridge%20Kasabkheda%20Ellora%20Road">📍 Maps</a>
+</div>
+
+<script>
+const menu = {
+  thali: [
+    ["Suruchi Special Veg Thali","A complete pure-veg family meal with a satisfying variety of Indian favorites.","₹","veg"],
+    ["Maharashtrian Deluxe Thali","Traditional Maharashtrian-style meal served with Bhakri.","₹","veg"],
+    ["Quick Highway Executive Thali","A convenient, hearty thali for travelers on a short highway break.","₹","veg"]
+  ],
+  main: [
+    ["Paneer Butter Masala","Creamy tomato gravy with soft paneer and aromatic spices.","₹","veg"],
+    ["Kaju Curry","Rich cashew-based curry with a smooth, festive texture.","₹","veg"],
+    ["Veg Kolhapuri","Spiced mixed vegetables in a bold Kolhapuri-style gravy.","₹","veg"],
+    ["Dal Tadka with Jeera Rice","Comforting yellow dal finished with tadka, paired with fragrant jeera rice.","₹","veg"]
+  ],
+  breakfast: [
+    ["Special Highway Masala Chai","A warming masala chai for a refreshing journey break.","₹","veg"],
+    ["Misal Pav","Classic spicy Maharashtrian snack served with pav.","₹","veg"],
+    ["Kanda Pohe","Light and comforting flattened-rice breakfast with onion and seasoning.","₹","veg"],
+    ["Crispy Masala Dosa with Sambar","South Indian favorite with crisp dosa, masala filling and sambar.","₹","veg"]
+  ]
+};
+const grid = document.getElementById("menuGrid");
+function render(cat){
+  grid.innerHTML = menu[cat].map(d => `
+    <article class="dish">
+      <div><h3>${d[0]}</h3><p>${d[1]}</p><span class="veg-dot">▣ PURE VEG</span></div>
+      <div class="price">${d[2]}</div>
+    </article>`).join("");
+}
+document.querySelectorAll(".tab").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".tab").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active"); render(btn.dataset.cat);
+  });
+});
+render("thali");
+</script>
+</body>
+</html>
