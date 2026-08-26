@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Suruchi Family Restaurant — Pure Veg, AC / Non-AC, Garden Seating and 24x7 EV Charging.">
+<title>Suruchi Family Restaurant | Pure Veg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#073b2a; --green2:#0d563b; --gold:#f3b51b; --cream:#fffaf0;
+  --ink:#13251d; --muted:#6c786f; --line:#eadfc9; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.top{background:#03261b;color:#fff;padding:8px 0;font-size:13px}
+.top .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+nav{position:sticky;top:0;z-index:50;background:rgba(255,250,240,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:"Playfair Display";font-size:34px;font-weight:800;color:var(--green)}
+.logo small{display:block;font-family:"DM Sans";font-size:10px;letter-spacing:2px;color:#b57900;margin-top:-8px}
+.links{display:flex;gap:26px;font-weight:600;font-size:14px}
+.links a:hover{color:#b57900}
+.call{background:var(--green);color:#fff;padding:12px 18px;border-radius:14px;font-weight:700}
+.hero{background:linear-gradient(90deg,#052d20 0%,#073b2a 48%,rgba(7,59,42,.78)),url("suruchi-new-mockup.png") right center/cover;min-height:610px;display:flex;align-items:center;color:#fff}
+.hero-copy{max-width:620px;padding:75px 0}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+h1{font-family:"Playfair Display";font-size:clamp(52px,8vw,92px);line-height:.95;margin:14px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:19px;color:#eef5f0;max-width:520px}
+.badges{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.badge{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);padding:11px 14px;border-radius:14px;font-size:13px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:13px;font-weight:800}
+.btn.gold{background:var(--gold);color:#183019}.btn.dark{border:1px solid rgba(255,255,255,.45);color:#fff}
+.info{margin-top:-38px;position:relative;z-index:2}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--line);box-shadow:0 12px 35px rgba(0,0,0,.09);border-radius:22px;overflow:hidden}
+.info-item{padding:22px;border-right:1px solid var(--line)}.info-item:last-child{border:0}
+.info-item b{display:block;color:var(--green);margin-bottom:3px}.info-item span{font-size:13px;color:var(--muted)}
+section{padding:85px 0}
+.section-head{text-align:center;margin-bottom:35px}.section-head .eyebrow{color:#a26f00}.section-head h2{font-family:"Playfair Display";font-size:42px;color:var(--green)}
+.menu-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(40,45,30,.06)}
+.food{height:175px;background:linear-gradient(135deg,#1c5c40,#dca21a);display:grid;place-items:center;color:#fff;font-size:46px}
+.card-body{padding:15px}.card-body h3{font-size:16px}.card-body p{font-size:12px;color:#a26f00;margin-top:4px}
+.mockup{background:linear-gradient(135deg,#052d20,#0b5539);color:#fff}
+.mockup .section-head h2{color:#fff}.mockup-frame{background:#07170f;padding:10px;border-radius:22px;box-shadow:0 25px 70px rgba(0,0,0,.28);max-width:1050px;margin:auto}
+.mockup-frame img{width:100%;display:block;border-radius:14px}
+.features{background:#063526;color:#fff}.feature-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.feature{text-align:center;padding:18px 10px;border:1px solid rgba(255,255,255,.14);border-radius:16px}.feature .icon{font-size:28px;margin-bottom:7px}.feature p{font-size:12px;color:#dce9e1}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px}.gallery div{min-height:180px;border-radius:18px;background:linear-gradient(135deg,#0b563a,#d9a01a);display:flex;align-items:end;padding:18px;color:#fff;font-weight:800}
+.review{background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px;display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center}
+.stars{color:#e9a900;font-size:20px}.review h3{font-family:"Playfair Display";font-size:30px;color:var(--green)}
+footer{background:#03261b;color:#dce9e1;padding:55px 0 20px}.footer-grid{display:grid;grid-template-columns:1.2fr .8fr 1.2fr .8fr;gap:35px}.footer-title{color:var(--gold);font-weight:800;margin-bottom:12px}.footer p,.footer a{font-size:13px;color:#b9c9c0;display:block;margin:5px 0}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:18px;text-align:center;font-size:12px;color:#91a69b}
+@media(max-width:900px){.links{display:none}.info-grid{grid-template-columns:repeat(2,1fr)}.menu-grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}.review{grid-template-columns:1fr}.hero{min-height:650px}}
+@media(max-width:560px){.navin{height:66px}.logo{font-size:28px}.call{padding:10px 12px;font-size:12px}.hero-copy{padding:60px 0}.hero p{font-size:16px}.info-grid{grid-template-columns:1fr}.info-item{border-right:0;border-bottom:1px solid var(--line)}.menu-grid{grid-template-columns:1fr 1fr;gap:10px}.food{height:125px}.feature-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}.gallery div{min-height:150px}.footer-grid{grid-template-columns:1fr}section{padding:65px 0}.section-head h2{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container"><span>🌿 100% Pure Veg &nbsp; • &nbsp; ❄️ AC / Non-AC &nbsp; • &nbsp; 🌳 Garden Seating</span><span>⚡ 24×7 60 kW EV Charging &nbsp; • &nbsp; 🕐 Open 24 Hours</span></div></div>
+
+<nav><div class="container navin">
+  <a class="logo" href="#">Suruchi<small>FAMILY RESTAURANT</small></a>
+  <div class="links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#facilities">Facilities</a><a href="#location">Location</a></div>
+  <a class="call" href="tel:+917092088881">☎ Call Now</a>
+</div></nav>
+
+<main id="home">
+<section class="hero"><div class="container"><div class="hero-copy">
+  <div class="eyebrow">Welcome to</div>
+  <h1>Suruchi <span>Family Restaurant</span></h1>
+  <p>Pure Veg. Pure Delight. A comfortable family dining destination with AC / Non-AC seating, garden ambience and convenient EV charging.</p>
+  <div class="badges"><div class="badge">🌿 100% Pure Veg</div><div class="badge">❄️ AC / Non-AC</div><div class="badge">👨‍👩‍👧 Family Friendly</div></div>
+  <div class="actions"><a class="btn gold" href="#menu">View Menu →</a><a class="btn dark" target="_blank" href="https://g.page/r/CbZ2snfphL1GEBE/review">⭐ Post a Review</a></div>
+</div></div></section>
+
+<div class="info"><div class="container"><div class="info-grid">
+  <div class="info-item">🕐 <b>OPEN 24 HOURS</b><span>Mon – Sun</span></div>
+  <div class="info-item">👨‍🍳 <b>DELICIOUS FOOD</b><span>Hygienic & Fresh</span></div>
+  <div class="info-item">⚡ <b>24×7 60 kW EV</b><span>EV Charging</span></div>
+  <div class="info-item">📍 <b>EASY TO FIND US</b><span>On Mumbai – Pune Highway</span></div>
+</div></div></div>
+
+<section id="menu"><div class="container">
+ <div class="section-head"><div class="eyebrow">Our Special</div><h2>Menu Highlights</h2></div>
+ <div class="menu-grid">
+  <article class="card"><div class="food">🍛</div><div class="card-body"><h3>Paneer Butter Masala</h3><p>Rich & Creamy</p></div></article>
+  <article class="card"><div class="food">🍚</div><div class="card-body"><h3>Veg Biryani</h3><p>Aromatic & Flavorful</p></div></article>
+  <article class="card"><div class="food">🥘</div><div class="card-body"><h3>Dal Tadka</h3><p>Homely & Delicious</p></div></article>
+  <article class="card"><div class="food">🥞</div><div class="card-body"><h3>Masala Dosa</h3><p>Crispy & Tasty</p></div></article>
+  <article class="card"><div class="food">🍮</div><div class="card-body"><h3>Gulab Jamun</h3><p>Sweet Happiness</p></div></article>
+ </div>
+</div></section>
+
+<section class="mockup" id="about"><div class="container">
+ <div class="section-head"><div class="eyebrow">New Visual Identity</div><h2>Our Elegant New Look</h2></div>
+ <div class="mockup-frame"><img src="suruchi-new-mockup.png" alt="Suruchi Family Restaurant new website mockup"></div>
+</div></section>
+
+<section id="facilities" class="features"><div class="container">
+ <div class="section-head"><div class="eyebrow">Why Choose Suruchi?</div><h2>Made for Families</h2></div>
+ <div class="feature-grid">
+  <div class="feature"><div class="icon">👨‍👩‍👧</div><b>Family Friendly</b><p>Perfect for family get-togethers</p></div>
+  <div class="feature"><div class="icon">🌿</div><b>Pure Veg</b><p>100% Pure Veg Food</p></div>
+  <div class="feature"><div class="icon">❄️</div><b>AC / Non-AC</b><p>Comfortable dining</p></div>
+  <div class="feature"><div class="icon">🌳</div><b>Garden Seating</b><p>Greenery & fresh air</p></div>
+  <div class="feature"><div class="icon">⚡</div><b>EV Charging</b><p>24×7 60 kW charging</p></div>
+  <div class="feature"><div class="icon">🏅</div><b>Quality & Hygiene</b><p>High standards</p></div>
+ </div>
+</div></section>
+
+<section id="gallery"><div class="container">
+ <div class="section-head"><div class="eyebrow">Our Gallery</div><h2>A Place to Enjoy</h2></div>
+ <div class="gallery"><div>Restaurant Exterior</div><div>Elegant Dining</div><div>Garden Seating</div><div>Family Dining</div><div>Warm Ambience</div></div>
+</div></section>
+
+<section id="location"><div class="container"><div class="review">
+ <div><div class="stars">★★★★★</div><h3>We would love your feedback.</h3><p>Post a review to our profile and tell us about your Suruchi experience.</p></div>
+ <div><a class="btn gold" target="_blank" href="https://g.page/r/CbZ2snfphL1GEBE/review">⭐ Review on Google</a></div>
+</div></div></section>
+</main>
+
+<footer><div class="container footer-grid">
+ <div><div class="logo" style="color:#fff">Suruchi<small style="color:#f3b51b">FAMILY RESTAURANT</small></div><p>Pure Veg family dining with a comfortable ambience, garden seating and EV charging.</p></div>
+ <div><div class="footer-title">QUICK LINKS</div><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#facilities">Facilities</a></div>
+ <div><div class="footer-title">CONTACT US</div><p>☎ +91 7092088881</p><p>✉ suruchirestaurant1@gmail.com</p><p>📍 Suruchi Pure Veg Family Garden Restaurant, S. No. 222/1, Mumbai - Pune Highway, Induri Phata, Talegaon, Pune - 410507</p></div>
+ <div><div class="footer-title">REVIEW US</div><p>Love our food? Share your experience.</p><a class="btn gold" target="_blank" href="https://g.page/r/CbZ2snfphL1GEBE/review">Review on Google</a></div>
+</div><div class="container copy">© 2025 Suruchi Family Restaurant. All Rights Reserved.</div></footer>
+</body>
+</html>
